@@ -1,7 +1,5 @@
 package com.javaguru.lessons.lesson3;
 
-import java.math.BigDecimal;
-
 class HamsterTest {
 
     public static void main(String[] args) {
