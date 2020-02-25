@@ -14,6 +14,22 @@ class Stock {
         this.minPrice = currentPrice;
     }
 
+    public String getCompany() {
+        return company;
+    }
+
+    public double getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public double getMinPrice() {
+        return minPrice;
+    }
+
+    public double getMaxPrice() {
+        return maxPrice;
+    }
+
     public void updatePrice(double newPrice) {
         if (newPrice < 0) {
             System.out.println("Incorrect price");
