@@ -4,7 +4,7 @@ class NumberServiceDemo {
 
     public static void main(String[] args) {
         NumberService numberService = new NumberService();
-        int sumResult = numberService.rangeSum(7, 3);
+        int sumResult = numberService.rangeSum(3, 7);
         System.out.println("Sum result = " + sumResult);
     }
 }
