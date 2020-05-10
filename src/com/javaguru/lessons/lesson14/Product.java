@@ -1,20 +1,18 @@
-package com.javaguru.lessons.lesson12.design.layers.dataaccesslayer;
+package com.javaguru.lessons.lesson14;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Product {
+class Product {
 
     private Long id;
     private String name;
     private BigDecimal price;
 
-    public Product() {
-    }
-
-    public Product(Long id, String name) {
+    public Product(Long id, String name, BigDecimal price) {
         this.id = id;
         this.name = name;
+        this.price = price;
     }
 
     public Long getId() {

@@ -1,13 +1,14 @@
-package com.javaguru.lessons.lesson12;
+package com.javaguru.lessons.lesson14;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class StringServiceTest {
 
@@ -48,10 +49,10 @@ public class StringServiceTest {
 
     @Test
     public void shouldSumAllNumbersInString() {
-        String inputString = "aa 1 bb 2 cc 33 dd -1 0";
-        Integer expected = 35;
+        String inputString = "aa 1.5 bb 2.5 cc 33.9 dd -1 0.1";
+        BigDecimal expected = new BigDecimal("37.00");
 
-        Integer actual = victim.sumAllNumbersInString(inputString);
+        BigDecimal actual = victim.sumAllNumbersInString(inputString);
 
         assertEquals(expected, actual);
     }
